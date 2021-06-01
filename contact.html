@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="nav-links">
+                <span class="material-icons" onclick="hideMenu()">
+                    close
+                </span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="material-icons" onclick="showMenu()">
+                menu
+            </span>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Us Content -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111889.15234915611!2d78.9548337452643!3d28.793096579914575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390af2b557813115%3A0xc4046b93c3e02d1a!2sRampur%2C%20Uttar%20Pradesh%20244901!5e0!3m2!1sen!2sin!4v1622554292007!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <span class="material-icons">
+                        home
+                    </span>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Banglore, Karnataka, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <span class="material-icons">
+                        phone
+                    </span>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <span class="material-icons">
+                        email
+                    </span>
+                    <span>
+                        <h5>info@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Enter your name">
+                    <input type="email" name="" id="" placeholder="Enter your email">
+                    <input type="text" name="" id="" placeholder="Enter your subject">
+                    <textarea name="" id="" rows="8" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, delectus. Obcaecati cupiditate alias sit ea
+            <br>
+            dolorem pariatur aut. Possimus nulla assumenda impedit.
+        </p>
+        <div class="icons">
+            <span class="material-icons">
+                facebook
+            </span>
+            <span class="material-icons">
+                facebook
+            </span>
+            <span class="material-icons">
+                facebook
+            </span>
+            <span class="material-icons">
+                facebook
+            </span>
+            <p>Made With <span class="material-icons">
+                    favorite_border
+                </span> Tushar K. Yadav</p>
+        </div>
+    </section>
+
+    <!-- Javascript toggle menu -->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
